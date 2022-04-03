@@ -10,3 +10,6 @@ class Model:
     def new_model(self, fname):
         this = self.ds
         return pd.read_csv(f'{this.dname}{fname}')
+
+    def get_sname(self):
+        return self.ds.sname
